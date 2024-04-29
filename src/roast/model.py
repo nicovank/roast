@@ -1,8 +1,8 @@
 from collections import defaultdict
 from enum import Enum, auto
 
-from fastec import point_add, point_mul
-from roast import H, SessionContext, pre_agg, sign_agg
+from .fastec import point_add, point_mul
+from .roast import H, SessionContext, pre_agg, sign_agg
 
 # Enum values are used for priority (small value = high priority)
 class ActionType(Enum):

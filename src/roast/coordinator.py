@@ -9,12 +9,12 @@ import secrets
 import sys
 import time
 
-from shamir import split_secret
-from model import ActionType, CoordinatorModel
-from roast import share_val, verify
-from transport import send_obj, recv_obj
+from .shamir import split_secret
+from .model import ActionType, CoordinatorModel
+from .roast import share_val, verify
+from .transport import send_obj, recv_obj
 
-import fastec
+from . import fastec
 
 @dataclass(order=True)
 class PriorityAction:

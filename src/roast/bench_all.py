@@ -4,11 +4,11 @@ import logging
 import secrets
 import sys
 
-from coordinator import AttackerLevel, AttackerStrategy, Coordinator
-from model import CoordinatorModel
-from shamir import split_secret
+from .coordinator import AttackerLevel, AttackerStrategy, Coordinator
+from .model import CoordinatorModel
+from .shamir import split_secret
 
-import fastec
+from . import fastec
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)

@@ -1,7 +1,8 @@
-from fastec import n
 from random import sample
 
 import secrets
+
+from .fastec import n
 
 def poly_eval(coeffs, x):
     y = 0

@@ -3,13 +3,13 @@ from collections import namedtuple
 import hashlib
 import secrets
 
-from fastec import (
+from .fastec import (
     G, n, infinity,
     Point, point_add, point_mul,
     bytes_from_point, int_from_bytes,
 )
 
-from shamir import lagrange
+from .shamir import lagrange
 
 # This implementation can be sped up by storing the midstate after hashing
 # tag_hash instead of rehashing it all the time.

@@ -1,1 +1,0 @@
-fastecdsa ~= 2.2

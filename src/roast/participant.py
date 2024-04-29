@@ -5,8 +5,8 @@ import logging
 import sys
 import time
 
-from roast import pre_round, sign_round
-from transport import send_obj, recv_obj
+from .roast import pre_round, sign_round
+from .transport import send_obj, recv_obj
 
 MAX_NONCE_QUEUE = 32
 
