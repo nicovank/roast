@@ -32,13 +32,13 @@ The following example shows:
 1. First launch all the participants:
 
 ```shell
-% for i in `seq 12001 12005`; do python3 participant.py $i & done
+% for i in `seq 12001 12005`; do python3 -m roast.participant $i & done
 ```
 
 2. Next, run the coordinator:
 
 ```shell
-% python3 coordinator.py localhost 12001 3 5 2 0 10
+% python3 -m roast.coordinator localhost 12001 3 5 2 0 10
 ```
 
 Replace `localhost` with the correct host if you're not running the participants on the same machine as the coordinator. Use `bench_all.py` instead of `coordinator.py` if you'd like to run through all possible attacker strategies for given values of `t`, `n`.
